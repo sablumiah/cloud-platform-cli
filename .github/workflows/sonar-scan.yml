@@ -1,4 +1,4 @@
-name: sonarqube test
+name: Analyse Branch
 
 on:
   push:
