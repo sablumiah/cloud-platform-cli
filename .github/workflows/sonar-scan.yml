@@ -2,9 +2,8 @@ name: sonarqube test
 
 on:
   push:
-    branches-ignore:
-      - 'main'
-
+    branches: 
+      - "*"
 jobs:
   build:
     name: Sonarqube Scan 
