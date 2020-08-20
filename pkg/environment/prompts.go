@@ -22,7 +22,7 @@ type promptString struct {
 	validation   string
 }
 
-//////////////
+///////////////
 // PromptUI //
 //////////////
 
