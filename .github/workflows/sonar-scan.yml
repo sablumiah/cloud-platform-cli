@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: sonarqube scan test
+    name: Sonarqube Scan 
     runs-on: ubuntu-latest
     steps:
       - name: Setup sonarqube
