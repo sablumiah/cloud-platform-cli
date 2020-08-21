@@ -1,9 +1,9 @@
 name: Analyse Branch
-
 on:
   push:
-    branches: 
-      - "*"
+    branches-ignore:
+      - 'master'
+      - 'main'
 jobs:
   build:
     name: Sonarqube Scan 
@@ -17,7 +17,7 @@ jobs:
 
       - name: Run sonar scanner
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}:  
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
         run: sonar-scanner
           -Dsonar.host.url=${{ secrets.SONAR_URL }}
